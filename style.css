@@ -80,9 +80,9 @@ a:hover { color: var(--accent2); }
 .hero {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5fr 7fr;
   align-items: center;
-  padding: 8rem 5rem 4rem;
+  padding: 7rem 4rem 3rem;
   gap: 4rem;
   position: relative;
   overflow: hidden;
@@ -163,43 +163,117 @@ a:hover { color: var(--accent2); }
   transform: translateY(-1px);
 }
 
-/* Hero Art */
-.hero-art {
-  position: relative;
+/* Hero Right Panel */
+.hero-right {
   display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  max-height: calc(100vh - 8rem);
+  overflow: hidden;
+}
+
+.hero-about-label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6rem;
+}
+
+.hero-about {
+  background: rgba(99,102,241,0.06);
+  border: 1px solid rgba(99,102,241,0.2);
+  border-radius: 10px;
+  padding: 1.1rem 1.3rem;
+}
+
+.hero-about-text {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.hero-about-text strong { color: var(--text); }
+
+.hero-projects { display: flex; flex-direction: column; gap: 0.8rem; }
+
+.hero-proj-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+
+/* Mini project card inside hero */
+.hpcard {
+  display: block;
+  background: #fff;
+  border: 2px solid #1e1e2e;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  box-shadow: 3px 3px 0 #1e1e2e;
+  transition: transform 0.15s, box-shadow 0.15s;
+  text-decoration: none;
+}
+.hpcard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 #1e1e2e;
+}
+
+.hpcard-top {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 400px;
+  margin-bottom: 0.35rem;
 }
 
-.art-lines {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: rotate-slow 30s linear infinite;
+.hpcard-name {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0f172a;
 }
 
-@keyframes rotate-slow {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+.hpcard-star {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: #fde047;
+  color: #111;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  border: 1.5px solid #111;
 }
 
-.art-node {
-  position: absolute;
-  border-radius: 50%;
-  animation: pulse-node 3s ease-in-out infinite;
+.hpcard p {
+  font-size: 0.78rem;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 
-.n1 { width: 14px; height: 14px; background: var(--accent); top: 20%; left: 20%; animation-delay: 0s; }
-.n2 { width: 10px; height: 10px; background: var(--accent2); top: 20%; right: 20%; animation-delay: 0.5s; }
-.n3 { width: 16px; height: 16px; background: var(--accent); bottom: 20%; left: 20%; animation-delay: 1s; }
-.n4 { width: 10px; height: 10px; background: #a78bfa; bottom: 20%; right: 20%; animation-delay: 1.5s; }
-.n5 { width: 20px; height: 20px; background: linear-gradient(135deg, var(--accent), var(--accent2)); top: 10%; left: 50%; transform: translateX(-50%); animation-delay: 0.25s; }
-
-@keyframes pulse-node {
-  0%, 100% { transform: scale(1); opacity: 0.8; }
-  50% { transform: scale(1.4); opacity: 1; box-shadow: 0 0 16px rgba(99,102,241,0.7); }
+.hpcard-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
 }
+
+.hpcard-tags span {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: #6b21a8;
+  background: #f3e8ff;
+  border: 1px solid #d8b4fe;
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+}
+
+.hero-see-all {
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 600;
+  align-self: flex-start;
+  transition: color 0.2s;
+}
+.hero-see-all:hover { color: var(--accent2); }
 
 /* ===== SECTIONS ===== */
 .section { padding: 6rem 0; }
@@ -524,7 +598,7 @@ a:hover { color: var(--accent2); }
     text-align: center;
   }
   .hero-links { justify-content: center; }
-  .hero-art { display: none; }
+  .hero-right { display: none; }
   .projects-grid { grid-template-columns: 1fr 1fr; }
   .nav { padding: 1rem 1.5rem; }
   .nav-links { gap: 1rem; }
