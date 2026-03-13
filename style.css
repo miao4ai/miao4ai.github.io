@@ -163,6 +163,44 @@ a:hover { color: var(--accent2); }
   transform: translateY(-1px);
 }
 
+/* Hero Art (above name) */
+.hero-art {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  margin-bottom: 1.2rem;
+}
+
+.art-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotate-slow 30s linear infinite;
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.art-node {
+  position: absolute;
+  border-radius: 50%;
+  animation: pulse-node 3s ease-in-out infinite;
+}
+
+.n1 { width: 13px; height: 13px; background: var(--accent);  top: 20%; left: 8%;  animation-delay: 0s; }
+.n2 { width: 9px;  height: 9px;  background: var(--accent2); top: 20%; right: 8%; animation-delay: 0.5s; }
+.n3 { width: 14px; height: 14px; background: var(--accent);  bottom: 15%; left: 8%;  animation-delay: 1s; }
+.n4 { width: 9px;  height: 9px;  background: #a78bfa;        bottom: 15%; right: 8%; animation-delay: 1.5s; }
+.n5 { width: 18px; height: 18px; background: linear-gradient(135deg, var(--accent), var(--accent2)); top: 5%; left: 50%; transform: translateX(-50%); animation-delay: 0.25s; }
+
+@keyframes pulse-node {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.4); opacity: 1; box-shadow: 0 0 14px rgba(99,102,241,0.7); }
+}
+
 /* Hero Right Panel */
 .hero-right {
   display: flex;
