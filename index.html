@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miao Jiang – ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">miao4ai</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="btn-nav">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Machine Learning Engineer</p>
+      <h1>Miao Jiang</h1>
+      <p class="hero-sub">
+        Building end-to-end AI systems — from multimodal retrieval and LLM agents<br>
+        to scalable ML pipelines on GCP & AWS.
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/miao4ai" target="_blank" class="btn-primary">GitHub</a>
+        <a href="https://www.linkedin.com/in/miao4ai/" target="_blank" class="btn-secondary">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=8h-kJewAAAAJ&hl=en" target="_blank" class="btn-secondary">Scholar</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="art-node n1"></div>
+      <div class="art-node n2"></div>
+      <div class="art-node n3"></div>
+      <div class="art-node n4"></div>
+      <div class="art-node n5"></div>
+      <svg class="art-lines" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <line x1="80" y1="80"  x2="200" y2="200" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+        <line x1="320" y1="80"  x2="200" y2="200" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+        <line x1="80" y1="320" x2="200" y2="200" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+        <line x1="320" y1="320" x2="200" y2="200" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+        <line x1="200" y1="40"  x2="200" y2="200" stroke="#a78bfa" stroke-width="1.5" opacity="0.4"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        I'm a Machine Learning Engineer with <strong>5+ years of experience</strong> specializing in
+        Deep Learning, Generative AI, and scalable ML systems. I've shipped production systems at companies
+        like <strong>U-Next</strong> (Japan's #1 video streaming platform), <strong>CADDi</strong>, and
+        <strong>ExaWizards</strong>, and interned at <strong>Amazon</strong> as an Applied Scientist.
+      </p>
+      <p class="about-text">
+        My current focus is on <strong>agentic AI architectures</strong>, multimodal retrieval, and
+        GenAI pipelines — combining LLMs, vector search, and cloud-native infrastructure to build
+        intelligent, real-world systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">Open-source repos and production systems I've built</p>
+
+      <div class="projects-grid">
+
+        <!-- open_recruiter -->
+        <div class="pcard">
+          <div class="pcard-top">
+            <span class="pcard-year">2024</span>
+            <span class="pcard-stars">&#9733; 15</span>
+          </div>
+          <h3 class="pcard-title">open_recruiter</h3>
+          <p class="pcard-desc">
+            An autonomous AI agent for recruitment workflow automation. Orchestrates multi-step
+            reasoning — job understanding → candidate parsing → semantic retrieval → ranking →
+            feedback loop — to match candidates with opportunities at scale.
+          </p>
+          <div class="pcard-tags">
+            <span class="tag tag-ts">TypeScript</span>
+            <span class="tag tag-py">LangGraph</span>
+            <span class="tag tag-gen">RAG</span>
+            <span class="tag tag-gen">Vector Search</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://github.com/miao4ai/open_recruiter" target="_blank" class="pcard-btn-primary">View Project</a>
+          </div>
+        </div>
+
+        <!-- recruitGPT -->
+        <div class="pcard">
+          <div class="pcard-top">
+            <span class="pcard-year">2024</span>
+            <span class="pcard-stars">&#9733; —</span>
+          </div>
+          <h3 class="pcard-title">recruitGPT</h3>
+          <p class="pcard-desc">
+            Open-source Candidate-Job Matching System: Distilled LLM + Fine-tuned BGE +
+            Cross-Encoder + Knowledge Graph. Trains a Small ML Model (SML) for fast inference
+            without sacrificing ranking quality.
+          </p>
+          <div class="pcard-tags">
+            <span class="tag tag-nb">Jupyter</span>
+            <span class="tag tag-py">PEFT</span>
+            <span class="tag tag-gen">Knowledge Graph</span>
+            <span class="tag tag-gen">Cross-Encoder</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://github.com/miao4ai/recruitGPT" target="_blank" class="pcard-btn-primary">View Project</a>
+          </div>
+        </div>
+
+        <!-- Lawmind -->
+        <div class="pcard">
+          <div class="pcard-top">
+            <span class="pcard-year">2024</span>
+            <span class="pcard-stars">&#9733; —</span>
+          </div>
+          <h3 class="pcard-title">Lawmind</h3>
+          <p class="pcard-desc">
+            A production-oriented, agentic AI platform for legal document understanding.
+            Uses multi-step reasoning and retrieval-augmented generation to parse, summarize,
+            and answer questions over complex legal corpora.
+          </p>
+          <div class="pcard-tags">
+            <span class="tag tag-py">Python</span>
+            <span class="tag tag-gen">LLM</span>
+            <span class="tag tag-gen">RAG</span>
+            <span class="tag tag-gen">Agentic AI</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://github.com/miao4ai/Lawmind" target="_blank" class="pcard-btn-primary">View Project</a>
+          </div>
+        </div>
+
+        <!-- HP-JAX -->
+        <div class="pcard">
+          <div class="pcard-top">
+            <span class="pcard-year">2024</span>
+            <span class="pcard-stars">&#9733; —</span>
+          </div>
+          <h3 class="pcard-title">HP-JAX</h3>
+          <p class="pcard-desc">
+            High-Performance JAX Compute Framework. Leverages JAX's XLA compilation and
+            hardware acceleration (GPU/TPU) for scalable ML training and numerical computing
+            at research and production scale.
+          </p>
+          <div class="pcard-tags">
+            <span class="tag tag-py">Python</span>
+            <span class="tag tag-gen">JAX</span>
+            <span class="tag tag-gen">XLA</span>
+            <span class="tag tag-gen">GPU/TPU</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="https://github.com/miao4ai/HP-JAX" target="_blank" class="pcard-btn-primary">View Project</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>R&D Engineer — Machine Learning</h3>
+              <span class="timeline-date">Jun 2023 – Jan 2026</span>
+            </div>
+            <p class="timeline-company"><a href="https://www.unext.co.jp/en" target="_blank">U-Next Inc.</a> · Japan's #1 Video Streaming Platform</p>
+            <p>Built GenAI pipelines (Stable Diffusion + ControlNet), agentic chatbot systems, and an end-to-end visual-semantic retrieval platform processing millions of video frames on GCP.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Machine Learning Engineer</h3>
+              <span class="timeline-date">Jul 2022 – Feb 2023</span>
+            </div>
+            <p class="timeline-company"><a href="https://us.caddi.com/" target="_blank">CADDi Inc.</a> · AI-Driven Manufacturing Startup</p>
+            <p>Built CAD-driven deep learning image retrieval with EfficientNet on Vertex AI, using MLflow for reproducible experimentation across image and text modalities.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Machine Learning Engineer</h3>
+              <span class="timeline-date">Aug 2020 – May 2022</span>
+            </div>
+            <p class="timeline-company"><a href="https://exawizards.com/en/" target="_blank">ExaWizards Inc.</a> · Top AI Company in Japan (IPO 2022)</p>
+            <p>Applied and trained ML algorithms (primarily Computer Vision) to solve client-facing problems across industries.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Applied Scientist Intern</h3>
+              <span class="timeline-date">May 2020 – Aug 2020</span>
+            </div>
+            <p class="timeline-company">Amazon Inc.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Engineer</h3>
+              <span class="timeline-date">Jan 2015 – Jul 2016</span>
+            </div>
+            <p class="timeline-company">Cisco Systems Inc. · San Jose, CA</p>
+            <p>Data Center switch OS development with C++ and automation software with Java.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-tags"><span>Python</span><span>C++</span><span>Java</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>ML & Deep Learning</h4>
+          <div class="skill-tags"><span>PyTorch</span><span>TensorFlow</span><span>Scikit-Learn</span><span>OpenCV</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>GenAI & LLM</h4>
+          <div class="skill-tags"><span>LangChain</span><span>LangGraph</span><span>MCP</span><span>PEFT</span><span>GPT</span><span>Diffusion Models</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Cloud & MLOps</h4>
+          <div class="skill-tags"><span>GCP</span><span>AWS</span><span>BigQuery</span><span>Kubernetes</span><span>Airflow</span><span>MLflow</span><span>Spark</span><span>CI/CD</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Vector & Retrieval</h4>
+          <div class="skill-tags"><span>FAISS</span><span>Vertex AI Vector Search</span><span>BigQuery Vector</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Deployment</h4>
+          <div class="skill-tags"><span>FastAPI</span><span>TorchServe</span><span>TFLite</span><span>Vertex AI</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub">Open to ML engineering roles, research collaborations, and interesting projects.</p>
+      <div class="contact-links">
+        <a href="mailto:mjmiles198@gmail.com" class="btn-primary">mjmiles198@gmail.com</a>
+        <a href="https://www.linkedin.com/in/miao4ai/" target="_blank" class="btn-secondary">LinkedIn</a>
+        <a href="https://github.com/miao4ai" target="_blank" class="btn-secondary">GitHub</a>
+      </div>
+      <p class="contact-location">Fremont, CA · 408-208-4481</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built with HTML & CSS · <a href="https://github.com/miao4ai" target="_blank">miao4ai</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
