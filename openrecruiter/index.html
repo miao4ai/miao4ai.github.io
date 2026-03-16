@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenRecruiter – AI Recruitment Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">OpenRecruiter</span>
+    <div class="nav-links">
+      <a href="#download">Download</a>
+      <a href="https://github.com/miao4ai/open_recruiter" target="_blank">GitHub</a>
+    </div>
+    <div class="nav-badge">v2.1.0 Latest</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-deco deco1">採用</div>
+    <div class="hero-deco deco2">AI</div>
+    <div class="hero-deco deco3">✦</div>
+    <div class="hero-deco deco4">候補者</div>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-kana">オープンリクルーター</div>
+        <img
+          src="https://raw.githubusercontent.com/miao4ai/open_recruiter/main/images/large_logo.png"
+          alt="OpenRecruiter Logo"
+          class="hero-logo"
+        />
+        <p class="hero-tagline">
+          Your local AI recruitment co-pilot.<br>
+          <span class="highlight">100% offline. Zero data leak.</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn-download">
+            <span class="btn-icon">↓</span> Download Free
+          </a>
+          <a href="https://github.com/miao4ai/open_recruiter" target="_blank" class="btn-github">
+            GitHub →
+          </a>
+        </div>
+        <div class="hero-models">
+          <span class="model-tag claude">Claude</span>
+          <span class="model-tag gpt">GPT</span>
+          <span class="model-tag gemini">Gemini</span>
+          <span class="model-tag ollama">Ollama</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="erika-card">
+          <div class="erika-header">
+            <img
+              src="https://raw.githubusercontent.com/miao4ai/open_recruiter/main/images/avartar.png"
+              alt="Erika Chan"
+              class="erika-avatar"
+            />
+            <div>
+              <p class="erika-name">Erika Chan <span>エリカ</span></p>
+              <p class="erika-role">Your AI Recruiter Assistant</p>
+            </div>
+            <span class="erika-online">● Online</span>
+          </div>
+          <div class="erika-bubble">
+            Hi! I'm Erika Chan. Upload a JD and some resumes — I'll score fit, find skill gaps, and draft outreach emails for you. Let's hire someone great! ✨
+          </div>
+          <div class="erika-tags">
+            <span>Score candidates</span>
+            <span>Skill gap analysis</span>
+            <span>Outreach emails</span>
+            <span>Kanban pipeline</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS -->
+  <section class="section sec-what">
+    <div class="container">
+      <div class="section-label">// WHAT IS OpenRecruiter</div>
+      <h2 class="sec-title">Recruitment AI for<br><span>small teams & indie recruiters</span></h2>
+      <p class="sec-desc">
+        Built for independent recruiters and small teams working across industries they don't have deep expertise in.
+        Upload a job description and candidate resumes — OpenRecruiter does the heavy lifting.
+      </p>
+
+      <div class="features-grid">
+        <div class="feat-card" style="--c:#f472b6">
+          <div class="feat-icon">📄</div>
+          <h3>Upload & Parse</h3>
+          <p>Supports PDF, DOCX, and TXT. Paste a JD, drop in resumes, and go.</p>
+        </div>
+        <div class="feat-card" style="--c:#a78bfa">
+          <div class="feat-icon">⚡</div>
+          <h3>Candidate Scoring</h3>
+          <p>AI scores each candidate's fit against the job description instantly.</p>
+        </div>
+        <div class="feat-card" style="--c:#34d399">
+          <div class="feat-icon">🔍</div>
+          <h3>Skill Gap Analysis</h3>
+          <p>Identifies exactly where a candidate falls short — no guesswork.</p>
+        </div>
+        <div class="feat-card" style="--c:#fbbf24">
+          <div class="feat-icon">✉️</div>
+          <h3>Outreach Emails</h3>
+          <p>Generates personalized outreach emails for each shortlisted candidate.</p>
+        </div>
+        <div class="feat-card" style="--c:#38bdf8">
+          <div class="feat-icon">🗂️</div>
+          <h3>Kanban Pipeline</h3>
+          <p>Drag-and-drop board to track every candidate through your pipeline.</p>
+        </div>
+        <div class="feat-card" style="--c:#fb923c">
+          <div class="feat-icon">🔒</div>
+          <h3>100% Local</h3>
+          <p>Runs entirely on your machine. Your data never leaves your device.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SISTER PROJECT -->
+  <section class="section sec-sister">
+    <div class="container">
+      <div class="section-label">// SISTER PROJECT</div>
+      <div class="sister-layout">
+        <div class="sister-text">
+          <div class="sister-kana">リクルートGPT</div>
+          <h2 class="sec-title">RecruitGPT</h2>
+          <p class="sister-sub">The brain behind the matching.</p>
+          <p class="sec-desc">
+            RecruitGPT is the open-source post-training pipeline that powers OpenRecruiter's matching intelligence.
+            While OpenRecruiter handles the interface and workflow, RecruitGPT trains the specialized models that make
+            candidate-job matching truly accurate.
+          </p>
+          <div class="pipeline-steps">
+            <div class="pipe-step">
+              <span class="pipe-num">①</span>
+              <div><strong>Parse JD</strong><br><small>Qwen3.5 extracts structured requirements</small></div>
+            </div>
+            <div class="pipe-step">
+              <span class="pipe-num">②</span>
+              <div><strong>Retrieve</strong><br><small>BGE embeddings + FAISS vector search</small></div>
+            </div>
+            <div class="pipe-step">
+              <span class="pipe-num">③</span>
+              <div><strong>Rerank</strong><br><small>Cross-encoder for precision refinement</small></div>
+            </div>
+            <div class="pipe-step">
+              <span class="pipe-num">④</span>
+              <div><strong>KG Signals</strong><br><small>Knowledge graph for skill adjacency</small></div>
+            </div>
+            <div class="pipe-step">
+              <span class="pipe-num">⑤</span>
+              <div><strong>Explain</strong><br><small>Human-readable match reasoning</small></div>
+            </div>
+          </div>
+          <a href="https://github.com/miao4ai/recruitGPT" target="_blank" class="btn-github sister-btn">
+            View RecruitGPT →
+          </a>
+        </div>
+        <div class="sister-specs">
+          <div class="spec-card">
+            <div class="spec-label">LLM</div>
+            <div class="spec-val">Qwen3.5-0.8B <span class="spec-chip">QLoRA</span></div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-label">Embeddings</div>
+            <div class="spec-val">BAAI/bge-large-zh-v1.5</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-label">Reranker</div>
+            <div class="spec-val">BAAI/bge-reranker-v2-m3</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-label">Vector DB</div>
+            <div class="spec-val">FAISS <span class="spec-chip">local</span></div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-label">Training Cost</div>
+            <div class="spec-val spec-green">$7 – $18</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-label">Production</div>
+            <div class="spec-val">GCP · Vertex AI · BigQuery</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download" class="section sec-download">
+    <div class="container">
+      <div class="section-label">// DOWNLOAD</div>
+      <h2 class="sec-title">Get OpenRecruiter</h2>
+      <div class="version-badge">
+        <span class="ver-dot"></span> Latest: <strong>v2.1.0</strong> · Released Mar 13, 2026
+      </div>
+      <p class="sec-desc">Available for macOS, Windows, and Linux. No account required.</p>
+
+      <div class="download-grid">
+        <a href="https://github.com/miao4ai/open_recruiter/releases/latest" target="_blank" class="dl-card dl-mac">
+          <div class="dl-os-icon"> </div>
+          <h3>macOS</h3>
+          <p>Apple Silicon (ARM64)</p>
+          <div class="dl-file">.dmg · ~367 MB</div>
+          <div class="dl-btn">Download .dmg</div>
+        </a>
+        <a href="https://github.com/miao4ai/open_recruiter/releases/latest" target="_blank" class="dl-card dl-win">
+          <div class="dl-os-icon">⊞</div>
+          <h3>Windows</h3>
+          <p>Windows 10 / 11</p>
+          <div class="dl-file">.exe · ~440 MB</div>
+          <div class="dl-btn">Download .exe</div>
+        </a>
+        <a href="https://github.com/miao4ai/open_recruiter/releases/latest" target="_blank" class="dl-card dl-linux">
+          <div class="dl-os-icon">🐧</div>
+          <h3>Linux</h3>
+          <p>Ubuntu / Debian</p>
+          <div class="dl-file">.AppImage · ~424 MB</div>
+          <div class="dl-btn">Download .AppImage</div>
+        </a>
+      </div>
+
+      <div class="release-history">
+        <h3>Release History</h3>
+        <div class="release-table">
+          <div class="rel-row rel-latest">
+            <span class="rel-ver">v2.1.0</span>
+            <span class="rel-date">Mar 13, 2026</span>
+            <span class="rel-note">Search feedback + automatic candidate count refresh</span>
+            <a href="https://github.com/miao4ai/open_recruiter/releases/tag/v2.1.0" target="_blank" class="rel-link">↗</a>
+          </div>
+          <div class="rel-row">
+            <span class="rel-ver">v2.0.0</span>
+            <span class="rel-date">Mar 12, 2026</span>
+            <span class="rel-note">LangGraph agents + human-in-the-loop approvals</span>
+            <a href="https://github.com/miao4ai/open_recruiter/releases/tag/v2.0.0" target="_blank" class="rel-link">↗</a>
+          </div>
+          <div class="rel-row">
+            <span class="rel-ver">v1.5.0</span>
+            <span class="rel-date">Feb 27, 2026</span>
+            <span class="rel-note">First macOS install script</span>
+            <a href="https://github.com/miao4ai/open_recruiter/releases/tag/v1.5.0" target="_blank" class="rel-link">↗</a>
+          </div>
+          <div class="rel-row">
+            <span class="rel-ver">v1.0.0</span>
+            <span class="rel-date">Feb 20, 2026</span>
+            <span class="rel-note">Initial release · MUI migration · LiteLLM integration</span>
+            <a href="https://github.com/miao4ai/open_recruiter/releases/tag/v1.0.0" target="_blank" class="rel-link">↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>OpenRecruiter · MIT License · Open Source on <a href="https://github.com/miao4ai/open_recruiter" target="_blank">GitHub</a></p>
+    <p class="footer-sub">Erika Chan says: がんばって！ ✨</p>
+  </footer>
+
+</body>
+</html>
